@@ -11,10 +11,9 @@ bool subset_sum(int a[],int n,int sum)
         if(j==0)
         t[i][j]=true;
     }
-    if(sum%2!=0)
-    return false;
-    else
-    {
+    
+    
+    
     for(int i=1;i<n+1;i++)
     for(int j=1;j<sum+1;j++)
     {
@@ -23,7 +22,7 @@ bool subset_sum(int a[],int n,int sum)
         else
         t[i][j]=t[i-1][j];
     }
-    }
+    
     return t[n][sum];
     
 }
@@ -37,8 +36,12 @@ int main()
     int sum=0;
     for(int i=0;i<n;i++)
     sum=sum+a[i];
-    cout<<subset_sum(a,n,sum);
+    if(sum%2!=0)
+    cout<<false;
+    else
+    {
+    cout<<subset_sum(a,n,sum/2);
 
-
+    }
     return 0;
 }
