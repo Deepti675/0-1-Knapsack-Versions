@@ -1,3 +1,4 @@
+//target sum and count of subset sum with given diffrence both are same problems.....
 #include<bits/stdc++.h>
 using namespace std;
 int count_of_subset_sum_with_given_diff(int a[],int n,int sum)
