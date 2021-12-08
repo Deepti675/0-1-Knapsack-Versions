@@ -1,5 +1,5 @@
 //take two subset s1 and s2 and minimize the difference so i will go with the range solution where range is sum of array and if one subset is s1 then other subset will be
-//s2= range-s1 and we have to minimize the (range-s1)-s1=range-2*s1 so in last from subset sum table i will take last row with true value (means subset exist for that value)
+//s2= range-s1 and we have to minimize the (range-s1)-s1=range-2*s1 so in from subset sum table i will take last row with true value (means subset exist for that value)
 //and keeping all the value in a vector till half of the range after that minimize them.
 
 #include<bits/stdc++.h>
