@@ -1,4 +1,4 @@
-#top down approch(only table)
+//top down approch(only table)
 /******************************************************************************
 
                               Online C++ Compiler.
