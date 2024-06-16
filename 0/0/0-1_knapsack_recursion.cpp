@@ -11,6 +11,7 @@ int knapsack (int wt[], int val[], int w, int n)
     }
   if (wt[n - 1] <= w)
     {
+	    //take or not take ka max
       return max (val[n - 1] + knapsack (wt, val, w - wt[n - 1], n - 1),
 		  knapsack (wt, val, w, n - 1));
     }
